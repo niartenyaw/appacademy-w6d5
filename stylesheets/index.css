@@ -1,0 +1,60 @@
+body {
+  font-size: 30px;
+  font-family: Rubik, sans-serif;
+}
+
+#background {
+  position: absolute;
+  top: -400px;
+  left: -450px;
+  z-index: -1;
+  width: 150%;
+  height: 250%;
+
+  -webkit-animation:spin 120s linear infinite;
+  -moz-animation:spin 120s linear infinite;
+  animation:spin 120s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.clock {
+
+  font-weight: bolder;
+  color: rgb(255, 204, 0);
+  width: 50%;
+  margin: 50px auto;
+  padding: 5px 30px;
+  border: 1px solid black;
+  background-image: url('https://media.mnn.com/assets/images/2017/01/Optical-Illusion-Motion-illusion-Star.jpg.838x0_q80.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: space;
+}
+
+.clock div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather {
+  width: 50%;
+  color: #ef0000;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather img {
+  top: -300px;
+  position: fixed;
+  width: 100%;
+  -webkit-animation:spin 180s linear infinite;
+  -moz-animation:spin 180s linear infinite;
+  animation:spin 180s linear infinite;
+}
